@@ -9,13 +9,14 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #f3f4f6, #f0d8e4);
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* App Container */
 .app-container {
   width: 95%;
   max-width: 1200px;
@@ -27,24 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 80vh;
-  position: relative;
-  padding: 20px;
-}
-
-/* Fancy Gradient Border Animation */
-.app-container::before,
-.app-container::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border-radius: 30px;
-  border: 5px solid;
-  z-index: -1;
-  background: linear-gradient(to right, #ffafbd, #ffc3a0);
-  animation: rotateBorder 10s linear infinite;
 }
 
 /* Main Grid Layout */
@@ -54,7 +37,6 @@ body {
   gap: 40px;
   padding: 50px;
   flex-grow: 1;
-  animation: fadeIn 1s ease-in-out;
 }
 
 /* Card Styling */
@@ -97,23 +79,6 @@ body {
   font-weight: 600;
   margin-top: 20px;
   letter-spacing: 1px;
-}
-
-.name-input {
-  width: 80%;
-  padding: 15px;
-  border-radius: 12px;
-  border: none;
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-size: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.name-input:focus {
-  background-color: rgba(255, 255, 255, 0.9);
-  outline: none;
 }
 
 /* Button Styling */
@@ -182,3 +147,7 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+
+
+
