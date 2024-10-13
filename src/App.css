@@ -151,3 +151,30 @@ button:hover {
 
 
 
+.checkin-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center;     /* Horizontally center the content */
+  text-align: center;
+  padding: 40px;
+  color: white;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  height: 100%; /* Ensure the card takes the full height of its container */
+}
+
+.picked-up {
+  background: linear-gradient(135deg, #56ab2f, #a8e063); /* Green gradient */
+}
+
+.not-picked-up {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Red gradient */
+}
+
+.status {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
